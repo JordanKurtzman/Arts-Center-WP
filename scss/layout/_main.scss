@@ -1,0 +1,249 @@
+.main{
+    margin-bottom: $footer-height;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    &__container {
+        height: 60rem;
+        width: 90%;
+        padding-top: $nav-height;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include respond(tab-port) {
+                flex-direction: column;
+                width: 75%;
+
+        }
+        @include resize(mid){
+            flex-direction: column;
+            width: 75%;
+        }
+            &--heading{
+                margin: 1.5rem;
+                background-color: $color-red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                text-transform: uppercase;
+                text-align: center;
+                border-radius: 4px;
+                padding: 1rem 3rem;
+                
+                @include respond(tab-port){
+                    width: 100%;
+                    over-flow: hidden;
+                    padding: 3rem 3rem;
+
+                }
+                @include resize(mid){
+                    width: 100%;
+                    over-flow: hidden;
+                    padding: 3rem 3rem;
+                }
+                    &-primary{
+                        font-size: 3.5rem;
+                        font-weight: 400; 
+                        line-height: 4rem;
+                        color: $color-white;
+                        @include respond(tab-port){
+                            font-size: 3rem;
+                            font-weight: 300;
+                            line-height: 4rem;
+                        }    
+                        @include resize(mid){
+                            font-size: 3rem;
+                            font-weight: 300;
+                            line-height: 4rem;
+                        }                
+                        &-art{
+                            font-size: 5rem;
+                            font-weight: 700;
+                            color: $color-yellow; 
+                            @include respond(tab-port){
+                                font-size: 4rem;
+                                font-weight: 700;
+                            }
+                            @include resize(mid){
+                                font-size: 4rem;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+
+                    &-secondary{
+                        font-size: 2rem;
+                        letter-spacing: 1.2rem;
+                        line-height: 2.8rem;
+
+                    }
+            }
+            &--paragraph{
+                width: 50%;
+                margin-top: 2.5rem;
+                align-items: center;
+                padding: 1rem 3rem;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                margin-left: 3rem;
+                
+                @include respond(tab-port){
+                    width: 100%;
+                    
+                }
+                @include resize(mid){
+                    width: 100%;
+                }
+                
+            }
+    }
+    &__slideshow{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 6rem;
+        @include respond(phone){
+            position: relative;
+            margin-top: 15rem;
+        }
+        @include resize(skinny){
+            position: relative;
+            margin-top: 15rem;
+        }
+        &--image{
+            padding: 4rem;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__middle{
+        display: flex;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        @include respond(tab-port){
+            flex-direction: column;
+        }
+        @include resize(mid){
+            flex-direction: column;
+        }
+        &--salons-in-the-cloud{
+            width: 45%;
+            padding: 2rem;
+            @include respond (tab-port) {
+                width: 100%;
+            }
+            @include resize(mid){
+                width: 100%;
+            }
+            &-linkheading:link,
+            &-linkheading:active,
+            &-linkheading:visited {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                font-size: 3rem;
+                line-height: 3.5rem;
+                text-decoration: none;
+                color: $color-black;
+            }
+            &-linkheading:hover{
+                background-color: $color-blue;
+                color: $color-white;
+            }
+            &-p{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+            &-heading-secondary {
+                font-size: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+        &--mailing-list{
+            font-size: 1.6rem;
+            padding: 2rem;
+            @include respond(tab-port){
+                width: 100%;
+            }
+            @include resize(mid){
+                width: 100%;
+            }
+            &-heading{
+                font-size: 3rem;
+                margin-bottom: 3rem;
+                line-height: 3.5rem;
+            }
+            &-form-title{
+                font-size: 2rem;
+                padding: 1.5rem;
+                margin-left: -1rem;
+            }
+            &-form-input{
+                padding: 1.5rem;
+                width: 100%;
+                border: 2px solid $color-blue-grey;
+                border-radius: 3px;
+                font-family: 'Lato';
+                font-size: 1.5rem;
+
+            }
+            &-form-input:focus{
+                border: 2px solid $color-blue;
+            }
+            &-form-submit{
+                font-family: 'Lato';
+                font-size: 1.6rem;
+                padding: 1.6rem;
+                margin: 1rem 0 0 1rem;
+                border: 0px;
+                border-radius: 3px;
+                background-color: $color-blue-grey;
+                cursor: pointer;
+                margin-left: -.1rem;
+                margin-top: 1rem;
+            }
+            &-form-submit:hover{
+                background-color: $color-blue;
+                color: $color-white;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+        font-weight: 300;
+        font-size: 1.6rem;
+        @include respond(tab-land){
+            margin-bottom: 2rem;
+        }
+        @include resize(wide){
+            margin-bottom: 2rem;
+        }
+
+        &--image{
+            height: 6rem;
+            padding-right: 2rem;
+        }
+        
+        
+    }
+    
+
+
+    
+}

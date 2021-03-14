@@ -1,0 +1,22 @@
+.page{
+    position: relative;
+    &__header{
+        width: 80%;
+        margin-left: 5rem;
+        position: absolute;
+        font-size: 4.5rem;
+        transform: translateY(9.5rem)
+        
+    
+    }
+    &__content{
+        width: 80%;
+        margin-left: 5rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        transform: translateY(14rem);
+        
+
+        
+    }
+}

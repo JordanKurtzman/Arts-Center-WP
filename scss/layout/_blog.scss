@@ -1,0 +1,265 @@
+.blog-container {
+    position: relative;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    
+    
+}
+.blog {
+    
+    width: 60%;
+    margin-top: 5rem;
+    margin-bottom: 4.5rem;
+    margin-left: 20%;
+    padding-bottom: 2rem;
+    @include respond(tab-port){
+        width: 80%;
+        margin: 6.5rem 1rem 6.5rem 6rem;
+    }
+    @include resize(mid){
+        width: 80%;
+        margin: 6.5rem 1rem 6.5rem 6rem;
+    }
+    
+    
+    
+    
+    &__heading{
+        font-size: 4rem;
+        line-height: 4.5rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    
+    &__item{
+        
+        font-size: 2.5rem;
+        text-decoration: none;
+        line-height: 3.7rem;
+        padding: 1rem;
+    }
+    &__item--heading a:link,
+    &__item--heading a:visited,
+    &__item--heading a:active{
+        text-decoration: none;
+        color: $color-black;
+        
+    }
+    &__item--heading a:hover{
+        color: $color-red;
+    }
+    &__item--content{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    
+        
+    }
+
+    &__excerpt{
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        padding: 1rem;
+        &--link:link,
+        &--link:visited,
+        &--link:hover,
+        &--link:active{
+            display: inline-block;
+            padding: 1rem;
+            text-decoration: none;
+            background-color: $color-blue;
+            margin-top: 2rem;
+            color: $color-white;
+            cursor: pointer;
+        }
+    }
+
+    &__date{
+        font-size: 1.6rem;
+        padding: 1rem;
+
+    }
+    &__pagination{
+        font-size: 1.6rem;
+        padding: 1rem 1rem 6rem 1rem;
+        font-weight: 300;
+        margin-bottom: 4.5rem;
+
+    }
+
+}
+
+.post-container{
+    width: 100%;
+    position: relative;
+
+}
+.post{
+    padding: 6rem 0 8rem 0;
+    margin-left: 40%;
+    margin-right: 5%;
+    @include respond(tab-port){
+        margin-left: 5%;
+        margin-right: 5%
+    }
+    @include resize(mid){
+        margin-left: 5%;
+        margin-right: 5%
+    }
+    &__heading{
+        font-size: 3rem;
+        line-height: 4rem;
+        padding: 1rem 0;
+
+    }
+    &__content{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    &__date{
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding: 1rem 0;
+    }
+    &__box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0 1rem 0;
+        &--container{
+            display: flex;
+            flex-direction: row;
+        }
+        
+
+        &--home,
+        &--author{
+            display: block;
+            padding: 1.5rem;
+
+        }
+        &--home {
+            background-color: $color-blue;
+            margin-right: 0;
+        }
+        &--author{
+            background-color: $color-blue-grey;
+            margin-left: 0;
+        }
+        &--link:link,
+        &--link:visited,
+        &--link:hover,
+        &--link:active{
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            
+        }
+        &--homelink:link,
+        &--homelink:visited,
+        &--homelink:hover,
+        &--homelink:active{
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            color: $color-white;
+        }
+    }
+    
+}
+.sidebar {
+    display: block;
+    width: 30%;
+    @include respond(tab-port){
+        display: none;
+        width: 0%;
+    }
+    @include resize(mid){
+        display: none;
+        width: 0%;
+    }
+    &__content{
+        padding: 1rem;
+        margin-top: 10rem;
+        margin-left: 1.5rem;
+
+    }
+
+
+}
+
+.mainblog {
+    display: flex;
+    flex-direction: row;
+}
+
+//sidebar styling
+.sidebar ul {
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+.widget-title {
+    font-size: 1.6rem;
+}
+
+.archive-toggle{
+    display: none;
+    @include respond(tab-port){
+        display: block;
+        position: fixed;
+        margin-top: 6.5rem;
+        margin-left: 1rem;
+        border: none;
+        cursor: pointer;
+        fill: none;
+            &__icon{
+                font-size: 3rem;
+            }
+    }
+    @include resize(mid){
+        display: block;
+        position: fixed;
+        margin-top: 6.5rem;
+        margin-left: 1rem;
+        cursor: pointer;
+        border: none;
+        width: 4rem;
+        fill: none;
+        &__icon{
+            font-size: 3rem;
+        }
+    }
+}
+//media query sidebar
+.sidebar .active{
+    @include respond(tab-port){
+        width: 100%;
+        background-color: $color-black;
+    }
+
+    @include resize(mid){
+        width: 100%;
+        background-color: $color-black;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.widget-title .active {
+    color: $color-white;
+    text-align: center;
+}
+
+.sidebar .active ul {
+    text-align: center;
+    color: $color-white;
+}
+
+#categories-2{
+    margin-top: 1.5rem;
+}
