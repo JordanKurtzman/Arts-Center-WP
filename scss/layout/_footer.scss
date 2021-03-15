@@ -17,13 +17,32 @@
         padding: 1.5rem;
         margin-top: auto;
         margin-bottom: auto;
+        &--link:link,
+        &--link:visited,
+        &--link:hover,
+        &--link:active{
+            text-decoration: none;
+            color: $color-light-grey;
+        }
+        &--icon{
+            display: none;
+            @include resize(mid){
+                display: inline-block;
+            }
+            @include respond(tab-port){
+                display: inline-block;
+            }
+        }
+        
     }
+
     &__text:hover{
         color: $color-white;
     }
     &__links{
         margin-top: auto;
         margin-bottom: auto;
+    
     }
     @include resize  (skinny){
         &__links{
