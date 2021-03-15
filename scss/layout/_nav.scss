@@ -57,7 +57,7 @@ nav {
 .icon-link:active,
 .icon-link:hover,
 .icon-link:visited{
-    color: $color-light-grey;
+    color:$color-light-grey;
     @include respond(tab-port){
         display: none;
     }

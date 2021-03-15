@@ -28,11 +28,11 @@ discuss collective and individual possibilities and generate ideas for action.</
                 <div class="main__middle--mailing-list">
                     <form>
                         <h2 class="main__middle--mailing-list-heading">Sign up for our mailing list</h2>
-                        <div class="main__middle--mailing-list-form-title">Name:</div>
-                        <div><input class="main__middle--mailing-list-form-input" type="text" name="Name" size="20"></div>
-                        <div class="main__middle--mailing-list-form-title">Email:</div>
-                        <div><input class="main__middle--mailing-list-form-input" type="text" name="Email" size="20"></div>
-                        <button class="main__middle--mailing-list-form-submit" type="submit">Submit</button>
+                        <div class="main__middle--mailing-list-form-title"><label>Name:</label></div>
+                        <div><input class="main__middle--mailing-list-form-input" type="text" name="myEmail" size="20"></div>
+                        <div class="main__middle--mailing-list-form-title"><label>Email:</label></div>
+                        <div><input class="main__middle--mailing-list-form-input" type="text" name="myEmail" size="20"></div>
+                        <button class="main__middle--mailing-list-form-submit" type="submit" value="send">Submit</button>
                     </form>
                 </div>
             </div> 
