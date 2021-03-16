@@ -7,8 +7,6 @@ function load_styles() {
     wp_enqueue_script( 'boot3','https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array( 'jquery' ),'',true );
     wp_register_style('app', get_template_directory_uri().'/css/app.css', [], 1);
     wp_enqueue_style('app');
-    
-    
 }
 
 

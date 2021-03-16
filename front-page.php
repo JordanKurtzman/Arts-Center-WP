@@ -26,12 +26,13 @@ discuss collective and individual possibilities and generate ideas for action.</
                
                 </div>
                 <div class="main__middle--mailing-list">
-                    <form>
+                    <form method="post">
                         <h2 class="main__middle--mailing-list-heading">Sign up for our mailing list</h2>
-                        <div class="main__middle--mailing-list-form-title"><label>Name:</label></div>
-                        <div><input class="main__middle--mailing-list-form-input" type="text" name="myEmail" size="20"></div>
-                        <div class="main__middle--mailing-list-form-title"><label>Email:</label></div>
-                        <div><input class="main__middle--mailing-list-form-input" type="text" name="myEmail" size="20"></div>
+                        <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
+                        <div class="main__middle--mailing-list-form-title"><label for="name">Name:</label></div>
+                        <div><input class="main__middle--mailing-list-form-input" type="text" name="visitor_name" id="name" pattern=[A-Z\sa-z]{3,20} size="20" required></div>
+                        <div class="main__middle--mailing-list-form-title"><label for="email">Email:</label></div>
+                        <div><input class="main__middle--mailing-list-form-input" type="text" name="visitor_email" id="email" size="20" required></div>
                         <button class="main__middle--mailing-list-form-submit" type="submit" value="send">Submit</button>
                     </form>
                 </div>
