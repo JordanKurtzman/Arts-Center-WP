@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     height: auto;
+    z-index: 0;
     
     
 }
@@ -211,8 +212,10 @@
 .archive-toggle{
     display: none;
     @include respond(tab-port){
-        display: block;
-        position: fixed;
+        z-index: 10;
+        display: inline-block;
+        height: 1.5rem;
+        position: relative;
         margin-top: 6.5rem;
         margin-left: 1rem;
         border: none;
@@ -223,8 +226,10 @@
             }
     }
     @include resize(mid){
-        display: block;
-        position: fixed;
+        z-index: 10;
+        display: inline-block;
+        position: relative;
+        height: 1.5rem;
         margin-top: 6.5rem;
         margin-left: 1rem;
         cursor: pointer;
@@ -241,6 +246,8 @@
     @include respond(tab-port){
         width: 100%;
         background-color: $color-black;
+        display: block;
+    
     }
 
     @include resize(mid){
@@ -248,6 +255,7 @@
         background-color: $color-black;
         display: flex;
         flex-direction: column;
+        display: block;
     }
 }
 .widget-title .active {

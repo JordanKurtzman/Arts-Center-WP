@@ -2,7 +2,7 @@
 
 <main class="mainblog">
 <button class="archive-toggle" id="archive-toggle">
-                    <i class="fas fa-bars archive-toggle__icon"></i>
+                   button
 </button>
     <div class="sidebar" id="sideBar">
         <?php get_sidebar('sidebar-1');?>

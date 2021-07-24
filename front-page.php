@@ -26,14 +26,14 @@ discuss collective and individual possibilities and generate ideas for action.</
                
                 </div>
                 <div class="main__middle--mailing-list">
-                    <form method="post">
+                    <form method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
                         <h2 class="main__middle--mailing-list-heading">Sign up for our mailing list</h2>
-                        <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
                         <div class="main__middle--mailing-list-form-title"><label for="name">Name:</label></div>
-                        <div><input class="main__middle--mailing-list-form-input" type="text" name="visitor_name" id="name" pattern=[A-Z\sa-z]{3,20} size="20" required></div>
+                        <div><input class="main__middle--mailing-list-form-input" type="text" name="visitor_name" id="yourname" pattern=[A-Z\sa-z]{3,20} size="20" required></div>
                         <div class="main__middle--mailing-list-form-title"><label for="email">Email:</label></div>
-                        <div><input class="main__middle--mailing-list-form-input" type="text" name="visitor_email" id="email" size="20" required></div>
-                        <button class="main__middle--mailing-list-form-submit" type="submit" value="send">Submit</button>
+                        <div><input class="main__middle--mailing-list-form-input" type="text" name="visitor_email" id="youremail" size="20" required></div>
+                        <button class="main__middle--mailing-list-form-submit" type="submit">Submit</button>
+                        <input type="hidden" name="action" value="my_simple_form">
                     </form>
                 </div>
             </div> 

@@ -2,6 +2,7 @@
     width: 5rem;
     height: auto;
     border-radius: 5px;
+    
     @include respond(tab-port){
         display: none;
     }
@@ -15,13 +16,58 @@
     font-family: 'Lato';
     font-weight: 400;
     text-decoration: none;
+    @include respond(tab-port){
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    @include resize(mid){
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
 }
-.nav-link
-.nav-link:link,
-.nav-link:active,
-.nav-link:visited{
-    text-decoration: none;
+.nav-container {
+    width: 80%;
+    margin-left: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    @include respond(tab-port){
+        width: 100%;
+    }
+    @include resize(mid){
+        width: 100%;
+    }
+}
+.navbar-brand{
+    &:hover{
+        color: $color-white;
+    }
+    &:active{
+        color: $color-blue-grey;
+    }
+    
+}
 
+.menu-primary-menu-links-container{
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    a, a:link, a:active, a:hover {
+        text-decoration: none;
+    }
+    a, a:link {
+        color: $color-light-grey;
+    }
+    a:active {
+        color: $color-blue-grey;
+    }
+    a:hover {
+        color: $color-white;
+    }
+    li {
+        padding: 1rem;
+    }
 }
 
 
@@ -35,24 +81,20 @@
 nav {
     background-color: $color-black;
 }
-.dropdown-menu.show {
-    background-color: $color-blue-grey;
-    @include respond(tab-port){
-        width: 100%;
-    }
-    @include resize(mid){
-        width: 100%;
-    }
-}
+
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .fa-home{
     font-size: 2rem;
     
 }
+.icon-link{
+    padding: 1rem;
+}
+
 .icon-link:hover{
     color: $color-blue-grey;
 }
@@ -61,10 +103,7 @@ nav {
 .icon-link:active,
 .icon-link:visited{
     color:$color-light-grey;
-    @include respond(tab-port){
-        display: none;
-    }
-    @include resize(mid){
-        display: none;
-    }
+}
+.navbar-toggler {
+    display: none;
 }

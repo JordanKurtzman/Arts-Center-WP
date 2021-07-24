@@ -38,13 +38,13 @@
                 
                 @include respond(tab-port){
                     width: 100%;
-                    over-flow: hidden;
+                    overflow: hidden;
                     padding: 3rem 3rem;
 
                 }
                 @include resize(mid){
                     width: 100%;
-                    over-flow: hidden;
+                    overflow: hidden;
                     padding: 3rem 3rem;
                 }
                     &-primary{
