@@ -1,9 +1,7 @@
 <?php get_header()?>
 
 <main class="mainblog">
-<button class="archive-toggle" id="archive-toggle">
-                   button
-</button>
+
     <div class="sidebar" id="sideBar">
         <?php get_sidebar('sidebar-1');?>
 

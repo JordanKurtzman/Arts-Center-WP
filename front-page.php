@@ -26,15 +26,8 @@ discuss collective and individual possibilities and generate ideas for action.</
                
                 </div>
                 <div class="main__middle--mailing-list">
-                    <form method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
-                        <h2 class="main__middle--mailing-list-heading">Sign up for our mailing list</h2>
-                        <div class="main__middle--mailing-list-form-title"><label for="name">Name:</label></div>
-                        <div><input class="main__middle--mailing-list-form-input" type="text" name="visitor_name" id="yourname" pattern=[A-Z\sa-z]{3,20} size="20" required></div>
-                        <div class="main__middle--mailing-list-form-title"><label for="email">Email:</label></div>
-                        <div><input class="main__middle--mailing-list-form-input" type="text" name="visitor_email" id="youremail" size="20" required></div>
-                        <button class="main__middle--mailing-list-form-submit" type="submit">Submit</button>
-                        <input type="hidden" name="action" value="my_simple_form">
-                    </form>
+                    <h2 class="main__middle--mailing-list-heading">Sign up for our mailing list</h2>
+                    <?php echo do_shortcode('[contact-form-7 id="99" title="Mailing List"]');?>
                 </div>
             </div> 
             <div class="main__bottom">

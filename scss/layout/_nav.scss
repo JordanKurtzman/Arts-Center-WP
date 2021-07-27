@@ -30,16 +30,24 @@
     margin-left: 2rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: $nav-height;
     @include respond(tab-port){
+        
         width: 100%;
+        justify-content: space-between;
     }
     @include resize(mid){
+        
         width: 100%;
+        justify-content: space-between;
     }
 }
 .navbar-brand{
     &:hover{
-        color: $color-white;
+        color: $color-red;
     }
     &:active{
         color: $color-blue-grey;
@@ -56,15 +64,13 @@
     a, a:link, a:active, a:hover {
         text-decoration: none;
     }
-    a, a:link {
+    a, a:link, a:hover {
         color: $color-light-grey;
     }
     a:active {
         color: $color-blue-grey;
     }
-    a:hover {
-        color: $color-white;
-    }
+   
     li {
         padding: 1rem;
     }
@@ -74,7 +80,14 @@
 
 .navbar {
     justify-content: space-evenly;
-
+     @include respond(tab-port){
+        justify-content: flex-start;
+        
+    }
+    @include resize(mid){
+        justify-content: flex-start;
+        
+    }
 
 }
 
@@ -82,22 +95,26 @@ nav {
     background-color: $color-black;
 }
 
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 .fa-home{
     font-size: 2rem;
     
 }
 .icon-link{
     padding: 1rem;
+     @include respond(tab-port){
+        display: none;
+        
+    }
+    @include resize(mid){
+        display: none;
+        
+    }
+    
+    
+    
 }
 
-.icon-link:hover{
-    color: $color-blue-grey;
-}
+
 
 .icon-link:link,
 .icon-link:active,
@@ -106,4 +123,56 @@ nav {
 }
 .navbar-toggler {
     display: none;
+    cursor: pointer;
+    outline: none;
+    
+    @include respond(tab-port){
+        display: inline-block;
+        color: $color-light-grey;
+    }
+    @include resize(mid){
+        display: inline-block;
+        color: $color-light-grey;
+    }
+}
+
+#main-menu {
+    @include respond(tab-port){
+        display: none;
+        
+    }
+    @include resize(mid){
+        display: none;
+        
+    }
+    &.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: $nav-height;
+    left: 0;
+    right: 0;
+    z-index: 10;
+        ul{
+            display: flex;
+            flex-direction: column;
+
+            li{
+            display: block;
+            background-color: $color-black;
+                &:hover{
+                    background-color: $color-blue-grey;
+                }
+            a, a:active, a:link {
+                color: $color-light-grey;
+            }
+            a:hover{
+                color: $color-white;
+            }
+        }
+        }
+    
+        
+    }
 }

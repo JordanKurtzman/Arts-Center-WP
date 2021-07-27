@@ -247,3 +247,39 @@
 
     
 }
+.wpcf7 {
+    font-family: 'Lato'
+
+    
+}
+input[type='submit']{
+                font-family: 'Lato';
+                font-size: 1.6rem;
+                padding: 1.6rem;
+                margin: 1rem 0 0 1rem;
+                border: 0px;
+                border-radius: 3px;
+                background-color: $color-blue-grey;
+                cursor: pointer;
+                margin-left: -.1rem;
+                margin-top: 1rem;
+
+                &:hover{
+                    background-color: $color-blue;
+                    color: $color-white;
+                }
+
+}
+
+input{
+    padding: 1.5rem;
+    width: 100%;
+    border: 2px solid $color-blue-grey;
+    border-radius: 3px;
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    
+}
+input[type='text']{
+    margin-bottom: 1.5rem;
+}
