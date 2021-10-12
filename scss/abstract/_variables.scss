@@ -15,3 +15,33 @@ $color-slate-grey: #48495c;
 //Navbar
 $nav-height: 6rem;
 $footer-height: 6rem;
+
+
+//bootstrap customization
+$navbar-dark-color:                 $color-white;
+$navbar-dark-hover-color:           $color-blue-grey !default;
+$navbar-dark-active-color:          $color-white !default;
+
+$navbar-dark-brand-color:                 $color-white !default;
+$navbar-dark-brand-hover-color:           $color-blue-grey !default;
+
+
+$nav-link-font-size:                2rem !default;
+$nav-link-font-weight:              300 !default;
+
+$dropdown-bg: $color-blue-grey !default;
+$dropdown-link-color:               $color-black !default;
+$dropdown-link-hover-color:         $color-white !default;
+$dropdown-link-hover-bg:            $color-slate-grey !default;
+$dropdown-font-size:                2rem !default;
+
+$dropdown-padding-x:                .5rem !default;
+$dropdown-padding-y:               .5rem !default;
+$dropdown-item-padding-y:           1rem !default;
+$dropdown-item-padding-x:           .5rem !default;
+
+$font-weight-normal: 300;
+$dropdown-link-active-bg: $color-blue;
+
+
+

@@ -1,178 +1,43 @@
-.home-link{
-    width: 5rem;
-    height: auto;
-    border-radius: 5px;
-    
-    @include respond(tab-port){
-        display: none;
-    }
-    @include resize(mid){
-        display: none;
-    }
-}
-.nav a {
+#iconLink{
     font-size: 2rem;
-    line-height: 2.2rem;
-    font-family: 'Lato';
-    font-weight: 400;
-    text-decoration: none;
+    padding: .2rem .5rem;
     @include respond(tab-port){
-        font-size: 1.7rem;
-        line-height: 2rem;
+        display: none;
     }
     @include resize(mid){
-        font-size: 1.7rem;
-        line-height: 2rem;
-    }
-}
-.nav-container {
-    width: 80%;
-    margin-left: 2rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: $nav-height;
-    @include respond(tab-port){
-        
-        width: 100%;
-        justify-content: space-between;
-    }
-    @include resize(mid){
-        
-        width: 100%;
-        justify-content: space-between;
-    }
-}
-.navbar-brand{
-    &:hover{
-        color: $color-red;
-    }
-    &:active{
-        color: $color-blue-grey;
-    }
-    
-}
-
-.menu-primary-menu-links-container{
-    ul{
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-    }
-    a, a:link, a:active, a:hover {
-        text-decoration: none;
-    }
-    a, a:link, a:hover {
-        color: $color-light-grey;
-    }
-    a:active {
-        color: $color-blue-grey;
-    }
-   
-    li {
-        padding: 1rem;
+        display: none;
     }
 }
 
-
-
-.navbar {
-    justify-content: space-evenly;
-     @include respond(tab-port){
-        justify-content: flex-start;
-        
-    }
-    @include resize(mid){
-        justify-content: flex-start;
-        
-    }
-
-}
-
-nav {
+#navContainer {
     background-color: $color-black;
 }
 
-.fa-home{
-    font-size: 2rem;
-    
-}
-.icon-link{
-    padding: 1rem;
-     @include respond(tab-port){
-        display: none;
-        
-    }
-    @include resize(mid){
-        display: none;
-        
-    }
-    
+.nav{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
     
     
 }
 
 
 
-.icon-link:link,
-.icon-link:active,
-.icon-link:visited{
-    color:$color-light-grey;
-}
-.navbar-toggler {
-    display: none;
-    cursor: pointer;
-    outline: none;
-    
-    @include respond(tab-port){
-        display: inline-block;
-        color: $color-light-grey;
-    }
-    @include resize(mid){
-        display: inline-block;
-        color: $color-light-grey;
-    }
+.nav-item{
+    padding: .2rem .5rem;
 }
 
-#main-menu {
-    @include respond(tab-port){
-        display: none;
-        
-    }
-    @include resize(mid){
-        display: none;
-        
-    }
-    &.active {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: $nav-height;
-    left: 0;
-    right: 0;
-    z-index: 10;
-        ul{
-            display: flex;
-            flex-direction: column;
+.nav-link{
+    color: $color-white;
+    text-transform: uppercase;
+}
 
-            li{
-            display: block;
-            background-color: $color-black;
-                &:hover{
-                    background-color: $color-blue-grey;
-                }
-            a, a:active, a:link {
-                color: $color-light-grey;
-            }
-            a:hover{
-                color: $color-white;
-            }
-        }
-        }
-    
-        
-    }
+#nav {
+    background-color: $color-black;
+}
+
+.dropdown-item {
+    text-transform: uppercase;
+    font-weight: 300;
 }

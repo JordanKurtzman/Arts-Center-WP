@@ -5,7 +5,9 @@
         margin-left: 5rem;
         position: absolute;
         font-size: 4.5rem;
-        transform: translateY(9.5rem)
+        transform: translateY(9.5rem);
+        text-transform: uppercase;
+        font-weight: 300;
         
     
     }
@@ -15,8 +17,14 @@
         font-size: 1.6rem;
         line-height: 2.2rem;
         transform: translateY(14rem);
+        padding-bottom: 3rem;
         
 
         
     }
+}
+
+.our-history-p{
+    padding-bottom: 1rem;
+    margin-bottom: $footer-height;
 }

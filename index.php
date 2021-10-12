@@ -10,7 +10,7 @@
     <div class="blog-container">
         
         <div class="blog">
-            <h1 class="blog__heading">Research in Art Ottawa:<span class="italic"> Blog</span></h1>
+            <h1 class="blog__heading">LA County Arts Center:<span class="italic"> Blog</span></h1>
         <?php 
         while(have_posts()) {
             the_post();?>

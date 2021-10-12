@@ -1,21 +1,22 @@
-#wpcf7-f100-p29-o1{
-    padding-bottom: 10rem;
-}
 
-#wpcf7-f100-p29-o1 input[type='submit'] {
-    width: 30%;
+#wpcf7-f43-p13-o1 .your-name{
+    width: 45%;
 }
-#wpcf7-f100-p29-o1 textarea{
-    padding: 1.5rem;
+#wpcf7-f43-p13-o1 input[type="email"]{
+    width: 45%;
+}
+#wpcf7-f43-p13-o1 .your-message{
     width: 100%;
-    border: 2px solid $color-blue-grey;
-    border-radius: 3px;
-    font-family: 'Lato';
-    font-size: 1.5rem;
+    border: none;
+}
+#wpcf7-f43-p13-o1 {
+    padding-bottom: 5rem;
+
 }
 
-#wpcf7-f100-p29-o1 label {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-size: 1.7rem;
+#wpcf7-f43-p13-o1 label{
+    text-transform: uppercase;
+
+    font-style: italic;
 }
+

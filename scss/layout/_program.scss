@@ -1,0 +1,33 @@
+.program {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: $footer-height;
+
+    @include respond(tab-port){
+        display: flex;
+        flex-direction: column;
+    }
+    @include resize (mid){
+        display: flex;
+        flex-direction: column;
+    }
+    &__image{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        &--img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__p{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &--heading{
+            padding: .5rem 0rem;
+        }
+    }
+}

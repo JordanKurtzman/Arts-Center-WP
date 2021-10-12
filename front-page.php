@@ -1,46 +1,41 @@
 <?php get_header()?>
     <div id="main">
         <section class="main">
+            
             <div class="main__container">
-                <div class="main__container--heading">
-                    <h1 class="main__container--heading-primary">RIA Links Artists</h1>
-                    <h2 class="main__container--heading-secondary">for Systems Change</h2>
-                </div>
+                <h1 class="main__container--heading">LA County Community Arts Center</h1>                
                 <div class="main__container--paragraph">
-                    <p class="main__container--paragraph-text">Do you ever ask yourself what artists can do to resist and change our dysfunctional societal systems
-based on profit, exploitation, and competition? The neo-liberal approach to our environment has led to
-an existential climate crisis that puts life on this planet in critical peril.
-Climate change calls out for immediate responses from all of us according to our talents and capabilities.
-What can artists do?</p>
-<p>Ria Links Artists for Systems Change aims to bring together critical artists from Ottawa and elsewhere, to
-discuss collective and individual possibilities and generate ideas for action.</p>
+                    <p class="main__container--paragraph-text">Our program aims to provide quality visual arts education to youth in Los Angeles County.</p>
+                    <p class="main__container--paragraph-text">Thanks to the support of our community, we have been able to provide year-round after-school programs, enrichment, and day camp in LA County since 1998.</p>
                 </div>
             </div>
             <div class="main__middle">
-                <div class="main__middle--salons-in-the-cloud">
-                    <h2><a href="<?php echo get_category_link(get_cat_ID('Salons in the Cloud'));?>" class="main__middle--salons-in-the-cloud-linkheading">Salons in the Cloud</a></h2>
-                    <p class="main__middle--salons-in-the-cloud-p">Salons in the cloud are open to anyone, artists and non-artists, interested in, or curious about, art and systems change.</p>
-                    <p class="main__middle--salons-in-the-cloud-p">We invite artists from all disciplines, artists’ collectives, and study-groups who share a drive to work for systems
-                    change through their art in and around Ottawa, to showcase their projects and discuss their ideas in a Ria Links Salon.</p>
-                    <h3 class="main__middle--salons-in-the-cloud-heading-secondary">Salons in the Cloud will last as long as we can find presenters.</h3>
-               
+                <div class="slider">
+                    <div class="glide" id="hero">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/antenna-ohNCIiKVT1g-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__container"><img class="glide__image"  src="<?php bloginfo('template_url'); ?>/images/barbara-froes-Yhsdub0hV1A-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/content-pixie-woMD-vhzOHI-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/dea-piratedea-a1dGfN3S_SM-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/elena-mozhvilo-xw8DfYBaNbQ-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/jeswin-thomas-zzrlRlPI6iE-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/mike-fox-P5PhmW-OoJg-unsplash (1).jpg"></div></li>
+                            </ul>
+                        </div>
+                        <div class="slideshow__arrows glide__arrows" data-glide-el="controls">
+                            <button class="slideshow__arrows--buttons glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slideshow__arrows--buttons glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>                   
                 </div>
+
                 <div class="main__middle--mailing-list">
                     <h2 class="main__middle--mailing-list-heading">Sign up for our mailing list</h2>
-                    <?php echo do_shortcode('[contact-form-7 id="99" title="Mailing List"]');?>
+                    <?php echo do_shortcode('[contact-form-7 id="35" title="Untitled"]');?>
                 </div>
             </div> 
-            <div class="main__bottom">
-                <div class="main__bottom--image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/ria-logo.png" alt="" class="main__bottom--image">
-                </div>
-                <div class="main__bottom--text">
-                    <p>Ria Links Artists for Systems Change is an emerging online program that is an offshoot from RIA Research in Art, a
-                    voluntary artists initiative that Petra Halkes and René Price organized and ran from their home in Ottawa from 2006 –
-                    2020.
-                    </p>
-                </div>
-            </div>
+            
         </section>
 
     </div>

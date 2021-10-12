@@ -8,12 +8,13 @@
     box-sizing: border-box;
 
     &__container {
-        height: 60rem;
+
         width: 90%;
         padding-top: $nav-height;
         display: flex;
         margin-left: auto;
         margin-right: auto;
+        flex-direction: column;
 
         @include respond(tab-port) {
                 flex-direction: column;
@@ -26,15 +27,18 @@
         }
             &--heading{
                 margin: 1.5rem;
-                background-color: $color-red;
+                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
                 text-transform: uppercase;
+                font-weight: 300;
                 text-align: center;
                 border-radius: 4px;
                 padding: 1rem 3rem;
+                font-size: 3.7rem;
+                line-height: 4.5rem;
                 
                 @include respond(tab-port){
                     width: 100%;
@@ -47,51 +51,22 @@
                     overflow: hidden;
                     padding: 3rem 3rem;
                 }
-                    &-primary{
-                        font-size: 3.5rem;
-                        font-weight: 400; 
-                        line-height: 4rem;
-                        color: $color-white;
-                        @include respond(tab-port){
-                            font-size: 3rem;
-                            font-weight: 300;
-                            line-height: 4rem;
-                        }    
-                        @include resize(mid){
-                            font-size: 3rem;
-                            font-weight: 300;
-                            line-height: 4rem;
-                        }                
-                        &-art{
-                            font-size: 5rem;
-                            font-weight: 700;
-                            color: $color-yellow; 
-                            @include respond(tab-port){
-                                font-size: 4rem;
-                                font-weight: 700;
-                            }
-                            @include resize(mid){
-                                font-size: 4rem;
-                                font-weight: 700;
-                            }
-                        }
-                    }
+                             
+                        
 
-                    &-secondary{
-                        font-size: 2rem;
-                        letter-spacing: 1.2rem;
-                        line-height: 2.8rem;
-
-                    }
+                    
             }
             &--paragraph{
-                width: 50%;
+                width: 100%;
                 margin-top: 2.5rem;
                 align-items: center;
                 padding: 1rem 3rem;
                 font-size: 1.6rem;
                 line-height: 2rem;
                 margin-left: 3rem;
+                text-align: center;
+                font-style: italic;
+                
                 
                 @include respond(tab-port){
                     width: 100%;
@@ -103,77 +78,30 @@
                 
             }
     }
-    &__slideshow{
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 6rem;
-        @include respond(phone){
-            position: relative;
-            margin-top: 15rem;
-        }
-        @include resize(skinny){
-            position: relative;
-            margin-top: 15rem;
-        }
-        &--image{
-            padding: 4rem;
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-    }
+    
     &__middle{
         display: flex;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 6rem;
-        margin-bottom: 2rem;
+
+        flex-direction: column;
         @include respond(tab-port){
             flex-direction: column;
         }
         @include resize(mid){
             flex-direction: column;
         }
-        &--salons-in-the-cloud{
-            width: 45%;
-            padding: 2rem;
-            @include respond (tab-port) {
-                width: 100%;
-            }
-            @include resize(mid){
-                width: 100%;
-            }
-            &-linkheading:link,
-            &-linkheading:active,
-            &-linkheading:visited {
-                margin-top: 3rem;
-                margin-bottom: 3rem;
-                font-size: 3rem;
-                line-height: 3.5rem;
-                text-decoration: none;
-                color: $color-black;
-            }
-            &-linkheading:hover{
-                background-color: $color-blue;
-                color: $color-white;
-            }
-            &-p{
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                font-size: 1.6rem;
-                font-weight: 300;
-            }
-            &-heading-secondary {
-                font-size: 2rem;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-            }
+        &--glide{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 1.5rem 1rem;
         }
         &--mailing-list{
             font-size: 1.6rem;
             padding: 2rem;
+            width: 50%;
             @include respond(tab-port){
                 width: 100%;
             }
@@ -181,9 +109,11 @@
                 width: 100%;
             }
             &-heading{
-                font-size: 3rem;
+                font-size: 2rem;
                 margin-bottom: 3rem;
                 line-height: 3.5rem;
+                font-weight: 300;
+                text-transform: uppercase;
             }
             &-form-title{
                 font-size: 2rem;
@@ -271,15 +201,76 @@ input[type='submit']{
 
 }
 
-input{
-    padding: 1.5rem;
+input[type=text], input[type=email]{
+    padding: .5rem;
     width: 100%;
     border: 2px solid $color-blue-grey;
     border-radius: 3px;
     font-family: 'Lato';
     font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
     
 }
-input[type='text']{
-    margin-bottom: 1.5rem;
+input[type=submit] {
+    text-transform: uppercase;
+    width: 30%;
+
+}
+
+
+
+.glide__container {
+    position: relative;
+    width: 80%;
+    margin: 2.5rem auto 2.5rem auto;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.glide__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.slideshow{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    width: 100%;
+    &__arrows{
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        
+        &--buttons{
+            border: none;
+
+        }
+    }
+}
+.glide__container{
+    width: 80%;
+    margin: 2.5rem auto 2.5rem auto;
+}
+
+.glide__image{
+    max-width: 100%;
+    height: auto;
+}
+.glide__slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slider{
+    width: 90%;
+    margin: 2.5rem auto 4rem auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
 }
