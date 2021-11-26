@@ -15,7 +15,7 @@
 
                 <div class="glide__container">
                     <div class="glide" id="hero">
-                        <div class="glide__track" data-glide-el="track">
+                        <div class="glide__track" data-glide-el="track" id="track">
                             <ul class="glide__slides">
                                 <li class="glide__slide"><div class="glide__image--container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/antenna-ohNCIiKVT1g-unsplash.jpg"></div></li>
                                 <li class="glide__slide"><div class="glide__image--container"><img class="glide__image"  src="<?php bloginfo('template_url'); ?>/images/barbara-froes-Yhsdub0hV1A-unsplash.jpg"></div></li>

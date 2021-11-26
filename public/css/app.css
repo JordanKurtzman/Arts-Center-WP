@@ -388,8 +388,10 @@ body {
 }
 
 .glide__image--container {
-  width: 80%;
+  width: 100%;
   margin: 2.5rem auto 2.5rem auto;
+  display: flex;
+  justify-content: center;
 }
 
 .glide__image {

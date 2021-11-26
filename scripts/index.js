@@ -7,7 +7,7 @@ var glide = new Glide('#hero', {
     startAt: 5,
     perView: 1,
     autoplay: 4000,
-    animationDuration: 3000,
+    animationDuration: 3000
 })
 glide.mount()
 
