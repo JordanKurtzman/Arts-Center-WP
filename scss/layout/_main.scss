@@ -68,6 +68,7 @@
                 font-style: italic;
                 
                 
+                
                 @include respond(tab-port){
                     width: 100%;
                     
@@ -97,6 +98,7 @@
             display: flex;
             justify-content: center;
             padding: 1.5rem 1rem;
+            flex-direction: column;
         }
         &--mailing-list{
             font-size: 1.6rem;
@@ -219,58 +221,3 @@ input[type=submit] {
 }
 
 
-
-.glide__container {
-    position: relative;
-    width: 80%;
-    margin: 2.5rem auto 2.5rem auto;
-    display: flex;
-    align-items: center;
-
-    
-}
-
-.glide__image {
-    max-width: 100%;
-    height: auto;
-}
-
-.slideshow{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: relative;
-    width: 100%;
-    &__arrows{
-        display: flex;
-        justify-content: space-between;
-        font-size: 2rem;
-        
-        &--buttons{
-            border: none;
-
-        }
-    }
-}
-.glide__container{
-    width: 80%;
-    margin: 2.5rem auto 2.5rem auto;
-}
-
-.glide__image{
-    max-width: 100%;
-    height: auto;
-}
-.glide__slide {
-    display: flex;
-    justify-content: center;
-}
-
-.slider{
-    width: 90%;
-    margin: 2.5rem auto 4rem auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-content: center;
-}

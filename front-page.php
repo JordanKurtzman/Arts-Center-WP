@@ -10,24 +10,28 @@
                 </div>
             </div>
             <div class="main__middle">
-                <div class="slider">
+
+     
+
+                <div class="glide__container">
                     <div class="glide" id="hero">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
-                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/antenna-ohNCIiKVT1g-unsplash.jpg"></div></li>
-                                <li class="glide__slide"><div class="glide__container"><img class="glide__image"  src="<?php bloginfo('template_url'); ?>/images/barbara-froes-Yhsdub0hV1A-unsplash.jpg"></div></li>
-                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/content-pixie-woMD-vhzOHI-unsplash.jpg"></div></li>
-                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/dea-piratedea-a1dGfN3S_SM-unsplash.jpg"></div></li>
-                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/elena-mozhvilo-xw8DfYBaNbQ-unsplash.jpg"></div></li>
-                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/jeswin-thomas-zzrlRlPI6iE-unsplash.jpg"></div></li>
-                                <li class="glide__slide"><div class="glide__container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/mike-fox-P5PhmW-OoJg-unsplash (1).jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__image--container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/antenna-ohNCIiKVT1g-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__image--container"><img class="glide__image"  src="<?php bloginfo('template_url'); ?>/images/barbara-froes-Yhsdub0hV1A-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__image--container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/content-pixie-woMD-vhzOHI-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__image--container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/dea-piratedea-a1dGfN3S_SM-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__image--container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/elena-mozhvilo-xw8DfYBaNbQ-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__image--container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/jeswin-thomas-zzrlRlPI6iE-unsplash.jpg"></div></li>
+                                <li class="glide__slide"><div class="glide__image--container"><img class="glide__image" src="<?php bloginfo('template_url'); ?>/images/mike-fox-P5PhmW-OoJg-unsplash (1).jpg"></div></li>
                             </ul>
                         </div>
-                        <div class="slideshow__arrows glide__arrows" data-glide-el="controls">
-                            <button class="slideshow__arrows--buttons glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
-                            <button class="slideshow__arrows--buttons glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>                   
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+                        </div>     
+                    </div>  
+                                  
                 </div>
 
                 <div class="main__middle--mailing-list">
